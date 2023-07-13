@@ -7,6 +7,6 @@ class Post < ApplicationRecord
   validates :text, presence: true
 
   def post_counter
-    self.update(posts_counter: self.posts.count)
+    update(posts_counter: posts.count)
   end
 end
