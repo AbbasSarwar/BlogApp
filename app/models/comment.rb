@@ -7,6 +7,9 @@ class Comment < ApplicationRecord
   validates :text, presence: true
 
   def update_comments
-    update(comments_counter: comments.count)
+    post = self.post
+    post.update(comments_counter:post.comments.count)
+    comments.save
   end
+
 end

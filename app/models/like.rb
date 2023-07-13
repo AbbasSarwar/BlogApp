@@ -6,6 +6,7 @@ class Like < ApplicationRecord
   validates :post_id, presence: true
 
   def update_likes
-    update(likes_counter: likes.count)
+    post = self.post
+    post.update(likes_counter:post.likes.count)
   end
 end
