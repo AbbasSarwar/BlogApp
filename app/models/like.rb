@@ -5,7 +5,9 @@ class Like < ApplicationRecord
   validates :author_id, presence: true
   validates :post_id, presence: true
 
-  def update_likes
+  after_create :update_likes_counter
+
+  def update_likes_counter
     post.update(likes_counter: post.likes.count)
   end
 end
