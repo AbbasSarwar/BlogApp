@@ -8,13 +8,13 @@ RSpec.describe Comment, type: :model do
   before { subject.save }
 
   it 'should belong to an author' do
-    like = Like.reflect_on_association(:user)
-    expect(like.macro).to eq(:belongs_to)
+    comment = Comment.reflect_on_association(:user)
+    expect(comment.macro).to eq(:belongs_to)
   end
 
   it 'should belong to a post' do
-    like = Like.reflect_on_association(:post)
-    expect(like.macro).to eq(:belongs_to)
+    comment = Comment.reflect_on_association(:post)
+    expect(comment.macro).to eq(:belongs_to)
   end
 
   it 'checking comment<' do
