@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  def all; end
+  def index; end
 
-  def userid; end
+  def show; end
 end
