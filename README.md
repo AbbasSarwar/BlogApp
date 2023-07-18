@@ -51,6 +51,7 @@
 - **[DB created]**
 - **[Model created]**
 - **[Routes ]**
+- **[Routes tested]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
