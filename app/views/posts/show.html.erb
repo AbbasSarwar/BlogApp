@@ -1,7 +1,15 @@
 <div>
 <div>
-<b> <% @user.name %> </b>
-<p class="post"> <%= @post.text %> </p>
+<div class="post">
+<div class='one'>
+<b>Posted by: <%= @user.name %> </b>
+<p> <%= @post.text %> </p>
+</div>
+<div class="second">
+<p>comments: <%= @post.comments_counter %></p>
+<p> likes: <%= @post.likes_counter %></p>
+</div>
+</div>
 </div>
 <ul class="comments">
 <% @comments.each do |comment| %>
