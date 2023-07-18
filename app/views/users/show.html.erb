@@ -18,9 +18,9 @@
     <li>
     <b><%= post.title %></b>
     <p class= 'text'> <%= post.text %> </p>
-    <div class="post_bottom"> <p> <%= post.comments_counter %> </p> <p> <%= post.likes_counter %> </p> </div>
+    <div class="post_bottom"> <p>comments: <%= post.comments_counter %> </p> <p>likes: <%= post.likes_counter %> </p> </div>
     </li>
 <% end %>
 </ul>
 
-<a href="/users/<%= @user.id %>/posts">See more</a>
+<div class="seemore"> <a href="/users/<%= @user.id %>/posts">See more</a> </div>
