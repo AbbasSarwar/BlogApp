@@ -1,1 +1,12 @@
-<h1>USER: Post found by ID </h1>
+<div>
+<div>
+<b> <% @user.name %> </b>
+<p class="post"> <%= @post.text %> </p>
+</div>
+<ul class="comments">
+<% @comments.each do |comment| %>
+    <li> <%= comment.user.name %>: <%= comment.text %> </li>
+    <% end %>
+</ul>
+
+</div>

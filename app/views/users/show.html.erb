@@ -1,1 +1,26 @@
-<h1>User Found By ID</h1>
+<div class = "container">
+<div class = "img">
+<img src="<%= @user.photo %>">
+</div>
+<div class="main">
+<h2> 
+<%= @user.name %>
+</h2>
+<p>Number of Posts: <%= @user.post_counter %> </p>
+</div>
+</div>
+<div class = "bio">
+<b>Bio: </b>
+<p> <%= @user.bio %> </p>
+</div>
+<ul class="posts">
+<% @user.posts.each do |post| %>
+    <li>
+    <b><%= post.title %></b>
+    <p class= 'text'> <%= post.text %> </p>
+    <div class="post_bottom"> <p> <%= post.comments_counter %> </p> <p> <%= post.likes_counter %> </p> </div>
+    </li>
+<% end %>
+</ul>
+
+<a href="/users/<%= @user.id %>/posts">See more</a>
