@@ -7,7 +7,8 @@
 </div>
 <div class="second">
 <p>comments: <%= @post.comments_counter %></p>
-<p> likes: <%= @post.likes_counter %></p>
+<p> likes: <%= @post.likes_counter %>
+</p>
 </div>
 </div>
 </div>
@@ -15,6 +16,8 @@
 <% @comments.each do |comment| %>
     <li> <%= comment.user.name %>: <%= comment.text %> </li>
     <% end %>
+    <a href="/users/<%= @user.id %>/posts/<%= @post.id %>/comments/new">Add Comment</a>
+
 </ul>
 
 </div>
