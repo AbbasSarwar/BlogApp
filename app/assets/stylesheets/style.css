@@ -107,15 +107,15 @@ body {
 }
 
 .seemore {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .seemore a {
-    text-decoration: none;
-    font-size: 22px;
+  text-decoration: none;
+  font-size: 22px;
 }
 
 .text a {
-    text-decoration: none;
+  text-decoration: none;
 }
