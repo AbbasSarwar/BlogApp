@@ -22,9 +22,9 @@ class PostsController < ApplicationController
       redirect_to user_post_path(current_user, @post)
     else
       puts @post.errors.full_messages
-    render 'new'
+      render 'new'
     end
-  end  
+  end
 
   private
 

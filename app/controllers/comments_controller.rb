@@ -15,11 +15,12 @@ class CommentsController < ApplicationController
       render 'new'
     end
   end
-  
+
 
   private
+
   def comment_params
-      params.require(:comment).permit(:author_id, :post_id, :text)
-    end
+    params.require(:comment).permit(:author_id, :post_id, :text)
+  end
   # ...
 end
