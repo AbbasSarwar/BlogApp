@@ -148,3 +148,9 @@ body {
   padding: 10px 0;
   font-size: 20px;
 }
+
+button {
+  background-color: red;
+  color: bisque;
+  border-radius: 30%;
+}
