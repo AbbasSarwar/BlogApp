@@ -51,6 +51,15 @@ body {
   align-self: center;
 }
 
+.text a {
+  text-decoration: none;
+}
+
+.seemore a {
+  text-decoration: none;
+  font-size: 22px;
+}
+
 .main h2 a {
   text-decoration: none;
   color: rgb(6, 6, 11);
@@ -109,13 +118,4 @@ body {
 .seemore {
   display: flex;
   justify-content: center;
-}
-
-.seemore a {
-  text-decoration: none;
-  font-size: 22px;
-}
-
-.text a {
-  text-decoration: none;
 }
