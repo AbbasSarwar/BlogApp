@@ -8,6 +8,7 @@
 <div class="second">
 <p>comments: <%= @post.comments_counter %></p>
 <p> likes: <%= @post.likes_counter %>
+<%= button_to "Like", user_post_likes_path(@user, @post), method: :post %>
 </p>
 </div>
 </div>
