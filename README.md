@@ -9,7 +9,7 @@
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
-- [📖 \[BlogApp\] ](#-BlogApp-)
+- [📖 \[BlogApp\] ](#BlogApp-)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
@@ -52,6 +52,8 @@
 - **[Model created]**
 - **[Routes ]**
 - **[Routes tested]**
+- **[Create post]**
+- **[Add Comment]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
