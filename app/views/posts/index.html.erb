@@ -16,7 +16,7 @@
     <p class= 'text'> <a href="/users/<%= @user.id %>/posts/<%= post.id %>"><%= post.text %></a> </p>
     <div class="post_bottom"> <p>comments: <%= post.comments_counter %> </p> <p>likes: <%= post.likes_counter %> </p> </div>
     <ul class="comments">
-    <% post.comments.each do |comment| %>
+    <% post.recent_comments.each do |comment| %>
         <li> <%= comment.user.name %>: <%= comment.text %> </li>
     <% end %>
     </ul>

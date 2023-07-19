@@ -14,7 +14,7 @@
 <p> <%= @user.bio %> </p>
 </div>
 <ul class="posts">
-<% @user.posts.each do |post| %>
+<% @filterposts.each do |post| %>
     <li>
     <b><%= post.title %></b>
     <p class= 'text'> <%= post.text %> </p>
