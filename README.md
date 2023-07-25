@@ -103,6 +103,12 @@ In order to run this project you need:
 - Twitter: [@Abbas_sDev](https://twitter.com/Abbas_sDev)
 - LinkedIn: [Abbas-Sarwar](https://www.linkedin.com/in/abbas-sarwar-4a0b16257/)
 
+👤 **Umair Hamza**
+
+- GitHub: [@emhamza](https://github.com/emhamza)
+- Twitter: [@uhamzaz](https://twitter.com/uhamzaz)
+- LinkedIn: [Umair Hamza](https://www.linkedin.com/in/umair-hamza-a8262b261/)
+
 
 ## 🔭 Future Features <a name="future-features"></a>
 
