@@ -14,7 +14,7 @@
 </div>
 </div>
 <ul class="comments">
-<% @comments.each do |comment| %>
+<% @comments.includes(:user).each do |comment| %>
     <li> <%= comment.user.name %>: <%= comment.text %> </li>
     <% end %>
     <a href="/users/<%= @user.id %>/posts/<%= @post.id %>/comments/new">Add Comment</a>
