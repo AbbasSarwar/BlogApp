@@ -2,9 +2,10 @@
 <div>
 <div class="post">
 <div class='one'>
-<b>Posted by: <%= @user.name %> </b>
-<p> <%= @post.text %> </p>
+<b>Posted by: <%= @user.name %> </b><br>
+<h3><%= @post.title %></h3><br>
 </div>
+<p> <%= @post.text %> </p>
 <div class="second">
 <p>comments: <%= @post.comments_counter %></p>
 <p> likes: <%= @post.likes_counter %>
