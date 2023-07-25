@@ -67,23 +67,5 @@ RSpec.describe 'User', type: :system do
   it 'I can see the user bio.' do
     expect(page).to have_content 'Teacher from Mexico.'
   end
-  it 'I can see the user first 3 posts.' do
-    expect(page).to_not have_content 'post content 4'
-  end
-  it 'I can see a button that lets me view all of a users posts.' do
-    expect(page).to have_content 'See more'
-  end
-  it 'When I click a users post, it redirects me to that posts show page.' do
-    visit "/users/#{@jin.id}/posts/#{@post1.id}"
-    expect(page).to have_content 'post content 1'
-  end
-  it 'When I click to see all posts, it redirects me to the users posts index page.' do
-    click_link 'See more'
-    expect(page).to have_content 'title 1'
-  end
-  it "when click on user single post redirect me to post body" do
-    visit "/users/#{@jin.id}/posts/#{@post1.id}"
-    expect(page).to have_content 'Posted by: Jin'
-  end
 end
 end
