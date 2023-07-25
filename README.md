@@ -54,6 +54,8 @@
 - **[Routes tested]**
 - **[Create post]**
 - **[Add Comment]**
+- **[Improved Performance]**
+- **[End to End Testing]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -100,6 +102,12 @@ In order to run this project you need:
 - GitHub: [@AbbasSarwar](https://github.com/AbbasSarwar)
 - Twitter: [@Abbas_sDev](https://twitter.com/Abbas_sDev)
 - LinkedIn: [Abbas-Sarwar](https://www.linkedin.com/in/abbas-sarwar-4a0b16257/)
+
+👤 **Umair Hamza**
+
+- GitHub: [@emhamza](https://github.com/emhamza)
+- Twitter: [@uhamzaz](https://twitter.com/uhamzaz)
+- LinkedIn: [Umair Hamza](https://www.linkedin.com/in/umair-hamza-a8262b261/)
 
 
 ## 🔭 Future Features <a name="future-features"></a>

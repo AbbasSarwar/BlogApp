@@ -2,9 +2,10 @@
 <div>
 <div class="post">
 <div class='one'>
-<b>Posted by: <%= @user.name %> </b>
-<p> <%= @post.text %> </p>
+<b>Posted by: <%= @user.name %> </b><br>
+<h3><%= @post.title %></h3><br>
 </div>
+<p> <%= @post.text %> </p>
 <div class="second">
 <p>comments: <%= @post.comments_counter %></p>
 <p> likes: <%= @post.likes_counter %>
@@ -14,7 +15,7 @@
 </div>
 </div>
 <ul class="comments">
-<% @comments.each do |comment| %>
+<% @comments.includes(:user).each do |comment| %>
     <li> <%= comment.user.name %>: <%= comment.text %> </li>
     <% end %>
     <a href="/users/<%= @user.id %>/posts/<%= @post.id %>/comments/new">Add Comment</a>
