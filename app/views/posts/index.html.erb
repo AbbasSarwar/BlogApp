@@ -9,6 +9,7 @@
 <p>Number of Posts: <%= @user.post_counter %> </p>
 </div>
 </div>
+<a class="newpost" href="/users/<%= @user.id %>/posts/new">New Post</a>
 <ul class="posts">
 <% @posts.includes(:author, :comments).each do |post| %>
     <li>

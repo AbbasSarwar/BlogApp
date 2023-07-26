@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+gem 'devise'
 gem 'rails-controller-testing'
 gem 'rubocop', '>= 1.0', '< 2.0'
 group :development, :test do

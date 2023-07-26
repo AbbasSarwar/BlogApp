@@ -12,7 +12,7 @@ class Post < ApplicationRecord
   validates :likes_counter, numericality: { only_integer: true, greater_than_or_equal_to: 0 }
   validates :text, presence: true
 
-  after_save :posts_counter
+  after_create :posts_counter
   def posts_counter
     author.update(post_counter: author.posts.count)
   end

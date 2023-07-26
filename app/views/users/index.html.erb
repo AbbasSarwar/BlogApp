@@ -1,4 +1,14 @@
+<div class="top">
 <h1>All Users</h1>
+<div class="sign">
+<% if user_signed_in? %>
+    <p>User Signed in</p>
+<% else %>
+<a href="<%= new_user_registration_path %>">Sign up </a>
+<a href="<%= new_user_session_path %>"> Sign In </a>
+    <% end %>
+</div>
+</div>
 <ul class="main-container">
 <% @users.each do |user| %>
 <li> 
@@ -16,4 +26,3 @@
 </li>
 <% end %>
 </ul>
-<a class="newpost" href="/posts/new">New Post</a>
