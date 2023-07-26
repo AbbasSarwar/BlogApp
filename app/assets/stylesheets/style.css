@@ -165,3 +165,12 @@ button {
   display: flex;
   gap: 20px;
 }
+
+.forms {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 15vh;
+}
