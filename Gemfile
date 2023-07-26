@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
+gem 'devise'
 gem 'rails-controller-testing'
 gem 'rubocop', '>= 1.0', '< 2.0'
-gem 'devise'
 group :development, :test do
   gem 'rspec-rails'
 end
